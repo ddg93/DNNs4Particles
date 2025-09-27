@@ -1,0 +1,21 @@
+data:
+  particle: 'ELL_r06/'
+  boxlist_file: 'boxlist.txt'
+  model_saving: 'jfm1_model'
+
+model:
+  input_dim: 3
+  dense_layers: [64, 64, 32]
+  activation: 'relu'
+  output_dim: 3
+  L2_weight: 0.001
+  drop_out: false
+  dropout_rate: 0.2
+  loss_weight: 1.0
+
+training:
+  optimizer: adam
+  epochs: 30
+  batch_size: 32
+  test_size: 0.2
+  learning_rate: 0.001
